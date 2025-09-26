@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    background-color: #222;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    color: beige;
+}
+
+h2 {
+    color: seagreen;
+}
+
+body {
+    /* background-color: #f4f8ff; */
+    color: #222;
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+}
+
+p {
+    color: beige;
+    margin: 20px;
+    line-height: 1.7;
+}
+
+button {
+    background-color: orange; 
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+    transform: translateY(-1px);
+}
+
+button:focus, a:focus, input:focus, textarea:focus {
+    outline: 3px solid cornflowerblue;
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+ol {
+    list-style-type: upper-roman;
+    margin-left: 30px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+a, button {
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+ul {
+    color: beige;
+}
+
+table{
+    color: beige;
+}
